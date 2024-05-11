@@ -41,8 +41,9 @@ aliases: []
   + HTTP/2(2015)
     + 이진 형식으로 데이터 전송
     + 별도의 TCP 연결을 맺어야 했지만, 스트림 형식으로 이러한 병목 현상을 줄임
-  + HTTP/3
+  + HTTP/3(2018)
     + TCP 대신 UDP 프로토콜 사용
+    + 모든 웹사이트와 브라우저에서 HTTP/3가 지원되는 것은 아님(현재 구글은 적용되어 있음)
     
 ![그림3](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUR49F%2Fbtsc2XWUt0l%2FLGEpLnaRI1lB2MtQf4pkl0%2Fimg.png)
 
