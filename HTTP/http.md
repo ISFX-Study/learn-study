@@ -18,7 +18,9 @@ aliases: []
       ![클라이언트서버](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcN9XsH%2FbtsHmRN2oKH%2FPGi7Bv8VJL3aKVRBrggoE1%2Fimg.png)
     + **Stateless**
       + 서버가 클라이언트의 상태를 보존하지 않음
-    + **비연결성**
+    + 비연결성
+      + 한 번의 요청에 대한 응답이 완료되면 연결은 닫히게 됨
+      + 이러한 문제를 개선하기 위해서 파이프라이닝 기능이 나옴
     
 ## 2. HTTP 역사
   + HTTP의 탄생(1989)
@@ -47,7 +49,7 @@ aliases: []
 
   > 파이프라이닝 VS 스트림을 통한 다중화
   > + 파이프라이닝 : 요청 순서대로 응답을 반환해야함
-  > + 스트림을 통한 다중화 : 각각의 스트림 안에서 HTTP 요청 및 응답이 이뤄지면서, 대기 상태가 없어짐  
+  > + 스트림을 통한 다중화 : 각각의 스트림 안에서 병렬로 HTTP 요청 및 응답이 이뤄지면서 대기 상태가 없어짐  
     
 ![그림3](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUR49F%2Fbtsc2XWUt0l%2FLGEpLnaRI1lB2MtQf4pkl0%2Fimg.png)
 
