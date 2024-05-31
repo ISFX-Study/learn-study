@@ -57,6 +57,37 @@ aliases: []
 
 ![그림3](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcSUhhz%2FbtsHLYrqBpH%2FLnmWEkm5KJ8dh3k3oLPnnk%2Fimg.png)
 
++ HTTP 요청 메세지
+```
+POST /submit-form HTTP/1.1
+Host: www.example.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 27
+Connection: keep-alive
+
+username=example&password=1234
+```
++ HTTP 응답 메세지 
+```
+HTTP/1.1 200 OK
+Date: Mon, 31 May 2024 12:00:00 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Content-Type: text/html; charset=UTF-8
+Content-Length: 138
+Connection: keep-alive
+
+<html>
+<head>
+    <title>Example Page</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is an example page.</p>
+</body>
+</html>
+```
+
 + 구성
   + **시작 라인(요청 라인/ 상태 라인)**
     + 요청
