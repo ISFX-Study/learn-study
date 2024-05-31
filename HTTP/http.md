@@ -58,25 +58,35 @@ aliases: []
 ![그림3](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcSUhhz%2FbtsHLYrqBpH%2FLnmWEkm5KJ8dh3k3oLPnnk%2Fimg.png)
 
 + 구성
-  + **요청 라인**
-    + HTTP 메서드 : GET, POST 등등
-    + 요청 대상(request-target) : 요청할 리소스의 경로
-    + HTTP 버전 : 사용 중인 HTTP 프로토콜의 버전
-    ```
-    GET /index.html HTTP/1.1
-    ```
+  + **시작 라인(요청 라인/ 상태 라인)**
+    + 요청
+      + HTTP 메서드 : GET, POST 등등
+      + 요청 대상(request-target) : 요청할 리소스의 경로
+      + HTTP 버전 : 사용 중인 HTTP 프로토콜의 버전
+      ```
+      GET /index.html HTTP/1.1
+      ```
+    + 응답
+     + HTTP 버전 : 사용 중인 HTTP 프로토콜의 버전
+     + HTTP 상태코드 
+     + 문구 : 짦은 상태 코드에 대한 설
+      ```
+      HTTP/1.1 200 OK
+      ```
   + **헤더**
-    + 요청에 대한 추가 정보를 제공
-    + 각 헤더는 `헤더이름: 값` 형식으로 여러개가 있을수 있으며, 각 헤더는 개행 문자(CRLF)로 구분됨
+    + **HTTP 전송에 필요한 모든 부가정보**
+    + 각 헤더는 `filed: value` 형식으로 여러개가 있을수 있으며, 각 헤더는 개행 문자(CRLF)로 구분됨
+    + filed는 대소문자를 구분하지 않으나 value은 대소문자를 구분함
     ```
     Host: www.example.com
     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3
     Accept-Language: en-US,en;q=0.9
     ```
-  + **빈 줄(Blank Line)**
+  + **CRLF**
     + 헤더 섹션의 끝을 표시하는 것으로 반드시 있어야 함
   + **본문(Body)**
     + GET 요청시에서는 본문이 없음
+    + **실제 전송할 데이터**
 
 
 #### 출처(참고문헌)
