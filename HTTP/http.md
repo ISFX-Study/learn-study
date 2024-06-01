@@ -97,10 +97,10 @@ Connection: keep-alive
       ```
       GET /index.html HTTP/1.1
       ```
-    + 응답
-     + HTTP 버전 : 사용 중인 HTTP 프로토콜의 버전
-     + HTTP 상태코드 
-     + 문구 : 짦은 상태 코드에 대한 설
+    + 응답 
+      + HTTP 버전 : 사용 중인 HTTP 프로토콜의 버전
+      + HTTP 상태코드 
+      + 문구 : 짦은 상태 코드에 대한 설명
       ```
       HTTP/1.1 200 OK
       ```
