@@ -121,8 +121,8 @@ Connection: keep-alive
 
 
 #### 출처(참고문헌)
-- GPT
-- 웹의 기초
-- HTTP웹 기본지식
++ GPT
++ 웹의 기초
++ 모든 개발자를 위한 HTTP 웹 기본 지식
 
 #### 각주
