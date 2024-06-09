@@ -119,6 +119,67 @@ Connection: keep-alive
     + GET 요청시에서는 본문이 없음
     + **실제 전송할 데이터**
 
+## 4. HTTP 헤더
+  + 구성
+    ![그림5](https://developer.mozilla.org/ko/docs/Web/HTTP/Messages/http_request_headers3.png)
+
+    + 일반 헤더(General Headers)
+      + 요청과 응답 메세지 전체에 적용되는 정보가 있는 헤더
+    + 요청 헤더(Request Headers)
+      + 클라이언트가 서버에 요청을 보낼 때 사용되는 헤더
+    + 응답 헤더(Response Headers)
+      + 서버가 클라이언트에게 응답을 보낼 때 사용되는 헤더
+    + 표현 헤더(Representation Headers)
+      + 메시지 본문에 대한 메타데이터를 제공하는 헤더
+    
+  + 표현
+    + Content-Type
+      + 표현 데이터의 데이터 타입
+      ```
+      application/json 
+      charset=utf-8
+      ```
+    + Content-Encoding
+      + 표현 데이터의 인코딩
+      + 요청하는 곳에서 압축후 인코딩 헤더 추가, 응답에서 인코딩 헤더의 정보로 압축 해제
+      ```
+      gzip
+      ```
+    + Content-Language
+      + 표현 데이터의 자연언어
+      ```
+      ko
+      en
+      en-US
+      ```
++ **콘텐츠 협상**
+  + 클라이언트가 선호하는 표현으로 주는 것
++ **쿠키**
+  + Set-Cookie : 서버에서 클라이언트로 쿠키 전달
+  + Cookie: 클라이언트가 서버에서 받은 쿠키를 저장, HTTP 요청시 서버로 전달
+  + 사용자 로그인 세션관리, 광고 정보 트래킹에 사용됨
+  + 네트워크 트래픽을 유발 할 수 있으므로 최소한의 정보만 사용하는게 좋음
+  + 서버를 통하지 않고 웹 브라우저 내부에 저장하고 싶으면 웹스토지(localStorage, sessionStorage)를 이용하는 방법도 있음
+  + 쿠키 생명주기
+    ```
+    Set-Cookie: expries=날짜 // 만료일이 되면 쿠키 삭제됨
+    Set-Cookie: max-age=3600(3600초) // 0이나 음수를 지정하면 쿠키 삭제됨
+    ```
+    + 세션 쿠키 : 만료 날짜를 생략하면 브라우저 종료될때 삭제됨
+    + 영속 쿠키 : 만료 날짜를 입력하면 해당 날짜까지 유지(브라우저 종료되도 유지됨)
++ 일반 정보
+   + referer
+      + 이전 웹페이지 주소
+      + 유입 경로를 분석 할때 사용함
+      + 요청에서 사용함
+   + User-Agent
+       + 클라이언트 애플리케이션 정보
+       + 요청에서 사용함
+   + Server
+      + 요청을 처리하는 원래 서버의 정보
+   + Host
+     + 요청한 도메인의 정보
+     + 헤더 정보중에 필수값임
 
 #### 출처(참고문헌)
 + GPT
