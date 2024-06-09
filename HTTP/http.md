@@ -154,19 +154,24 @@ Connection: keep-alive
       ```
 + **콘텐츠 협상**
   + 클라이언트가 선호하는 표현으로 주는 것
-+ **쿠키**
+  
++ **쿠키**  
+  ![그림6](https://velog.velcdn.com/images%2Furtimeislimited%2Fpost%2F4cecd1b4-45c8-4cec-b9c7-33519669d421%2Fimage.png) 
+  ![그림7](https://velog.velcdn.com/images%2Furtimeislimited%2Fpost%2Fe94c56ce-3d9c-40ca-a2a8-59784153972c%2Fimage.png)
+    
   + **Set-Cookie** : 서버에서 클라이언트로 쿠키 전달
   + **Cookie**: 클라이언트가 서버에서 받은 쿠키를 저장, HTTP 요청시 서버로 전달
   + 사용자 로그인 세션관리, 광고 정보 트래킹에 사용됨
   + 네트워크 트래픽을 유발 할 수 있으므로 최소한의 정보만 사용하는게 좋음
   + 서버를 통하지 않고 웹 브라우저 내부에 저장하고 싶으면 웹스토지(localStorage, sessionStorage)를 이용하는 방법도 있음
-  + 쿠키 생명주기
+  + 생명주기
     ```
     Set-Cookie: expries=날짜 // 만료일이 되면 쿠키 삭제됨
     Set-Cookie: max-age=3600(3600초) // 0이나 음수를 지정하면 쿠키 삭제됨
     ```
     + 세션 쿠키 : 만료 날짜를 생략하면 브라우저 종료될때 삭제됨
     + 영속 쿠키 : 만료 날짜를 입력하면 해당 날짜까지 유지(브라우저 종료되도 유지됨)
+    
 + 일반 정보
    + referer
       + 이전 웹페이지 주소
