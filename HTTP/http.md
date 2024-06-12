@@ -130,30 +130,29 @@ Connection: keep-alive
     + 응답 헤더(Response Headers)
       + 서버가 클라이언트에게 응답을 보낼 때 사용되는 헤더
     + 표현 헤더(Representation Headers)
-      + 메시지 본문에 대한 메타데이터를 제공하는 헤더
+      + 메시지 본문에 대한 표현을 기술하는 헤더
     
-  + 표현
-    + Content-Type
++ **콘텐츠 협상**
+  + 클라이언트가 선호하는 표현으로 주는 것
+  + Content-Type
       + 표현 데이터의 데이터 타입
       ```
       application/json 
       charset=utf-8
       ```
-    + Content-Encoding
-      + 표현 데이터의 인코딩
+  + Content-Encoding
+    + 표현 데이터의 인코딩
       + 요청하는 곳에서 압축후 인코딩 헤더 추가, 응답에서 인코딩 헤더의 정보로 압축 해제
       ```
       gzip
       ```
-    + Content-Language
-      + 표현 데이터의 자연언어
-      ```
-      ko
-      en
-      en-US
-      ```
-+ **콘텐츠 협상**
-  + 클라이언트가 선호하는 표현으로 주는 것
+  + Content-Language
+    + 표현 데이터의 자연언어
+    ```
+    ko
+    en
+    en-US
+    ```
   
 + **쿠키**  
   ![그림6](https://velog.velcdn.com/images%2Furtimeislimited%2Fpost%2F4cecd1b4-45c8-4cec-b9c7-33519669d421%2Fimage.png) 
