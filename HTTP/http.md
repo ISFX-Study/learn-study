@@ -132,8 +132,9 @@ Connection: keep-alive
     + 표현 헤더(Representation Headers)
       + 메시지 본문에 대한 표현을 기술하는 헤더
     
-+ **콘텐츠 협상**
++ **콘텐츠 협상(Accept)**
   + 클라이언트가 선호하는 표현으로 주는 것
+  + 표현 헤더에 안에 들어감
   + Content-Type
       + 표현 데이터의 데이터 타입
       ```
