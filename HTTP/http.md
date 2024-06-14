@@ -53,7 +53,24 @@ aliases: []
     
 ![그림3](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUR49F%2Fbtsc2XWUt0l%2FLGEpLnaRI1lB2MtQf4pkl0%2Fimg.png)
 
-## 3. HTTP 메세지
+## 3. HTTP 메서드
++ GET
+  + 리소스 조회
+  + 쿼리 파라미터를 통해서 데이터 전달
++ POST
+  + 요청 데이터 처리
+  + 메시지 바디를 통해서 데이터 전달
++ PUT
+  + 리소스를 대체, 없으면 생성 
++ PATCH
+  + 리소스를 변경 
++ DELETE
+  + 리소스를 삭제
+
+## 4. HTTP 상태코드
+
+
+## 5. HTTP 메세지
 
 ![그림3](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcSUhhz%2FbtsHLYrqBpH%2FLnmWEkm5KJ8dh3k3oLPnnk%2Fimg.png)
 
@@ -119,7 +136,7 @@ Connection: keep-alive
     + GET 요청시에서는 본문이 없음
     + **실제 전송할 데이터**
 
-## 4. HTTP 헤더
+## 6. HTTP 헤더
   + 구성
     ![그림5](https://developer.mozilla.org/ko/docs/Web/HTTP/Messages/http_request_headers3.png)
 
@@ -186,9 +203,8 @@ Connection: keep-alive
      + 요청한 도메인의 정보
      + 헤더 정보중에 필수값임
 
-## 5. HTTP 헤더 - 캐시와 조건부 요청
-## 6. HTTP 상태코드
-## 7. HTTP 메서드
+## 7. HTTP 헤더 - 캐시와 조건부 요청
+
 
 #### 출처(참고문헌)
 + GPT
