@@ -54,27 +54,28 @@ aliases: []
 ![그림3](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUR49F%2Fbtsc2XWUt0l%2FLGEpLnaRI1lB2MtQf4pkl0%2Fimg.png)
 
 ## 3. HTTP 메서드
-+ GET
-  + 리소스 조회
-  + 쿼리 파라미터를 통해서 데이터 전달
-+ POST
-  + 요청 데이터 처리
-  + 메시지 바디를 통해서 데이터 전달
-  + 새로운 리소스를 생성하고, 그 리소스의 위치(URI)를 반환
-  ```
-  POST /users
-  ```
-+ PUT
-  + 리소스를 완전히 대체, 없으면 생성
-  + 수정할 리소스를 알고 있어서 리소소를 완전히 대체 할 수 있음
-  ```
-  PUT /users/123
-  ```
-+ PATCH
-  + 리소스를 부분 변경
-+ DELETE
-  + 리소스를 삭제
-
++ HTTP 메서드의 종류
+  + GET
+    + 리소스 조회
+    + 쿼리 파라미터를 통해서 데이터 전달
+  + POST
+    + 요청 데이터 처리
+    + 메시지 바디를 통해서 데이터 전달
+    + 새로운 리소스를 생성하고, 그 리소스의 위치(URI)를 반환
+    ```
+    POST /users
+    ```
+  + PUT
+    + 리소스를 완전히 대체, 없으면 생성
+    + 수정할 리소스를 알고 있어서 리소소를 완전히 대체 할 수 있음
+    ```
+    PUT /users/123
+    ```
+  + PATCH
+    + 리소스를 부분 변경
+  + DELETE
+    + 리소스를 삭제
++ HTTP 메서드의 속성
 ## 4. HTTP 상태코드
 
 
