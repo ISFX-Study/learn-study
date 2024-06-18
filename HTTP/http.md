@@ -213,11 +213,37 @@ Connection: keep-alive
      + 헤더 정보중에 필수값임
 
 ## 7. HTTP 헤더 - 캐시와 조건부 요청
++ HTTP 캐싱
+    + **리소스를 저장하여 다시 동일한 리소스를 요청할 때 더 빠르게 제공하는 기술**
+    + **HTTP 헤더 중에 `Cache-Control`를 이용함**
+    + 사용자 응답 속도 향상
+    + 서버의 부하 완화
 
++ 캐시 방식
+  + 시간 기반
+    + 유효한 시간을 비교하는 방법
+    + 특정 시간 동안만 유효하다는 것을 의미
+    + `max-age`속성을 이용
+    ```
+    Cache-Control: max-age=60
+    ```
+    + 검증 순서
+    ```
+    1. 서버가 클라이언트에게 응답할 때, `Last-Modified` 속성으로 수정일을 응답함
+    2. 응답받은 브라우저는 캐싱을 시작
+    3. 다시 서버가 클라이언트에게 재요청하면서, `If-Modified-Since` 속성에 수정일을 넣음 
+    4. 서버는 데이터가 변경 되었으면 다시 전달하고, 변경 되지 않았다면 변경되지 않았다는 응답(304 Not Modified)을 줌
+    ```
+  + 내용 기반
+    + 파일 자체를 비교하는 방법
+    + `ETag(Entity Tag)`
+    + 시간 기반 캐시 방식을 보완하기 위해서 나옴
 
 #### 출처(참고문헌)
 + GPT
 + 웹의 기초
 + 모든 개발자를 위한 HTTP 웹 기본 지식
++ https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Cache-Control
++ https://jeonghwan-kim.github.io/2024/02/08/http-caching
 
 #### 각주
