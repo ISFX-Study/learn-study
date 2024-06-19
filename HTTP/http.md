@@ -215,7 +215,6 @@ Connection: keep-alive
 ## 7. HTTP 헤더 - 캐시와 조건부 요청
 + HTTP 캐싱
     + **리소스를 저장하여 다시 동일한 리소스를 요청할 때 더 빠르게 제공하는 기술**
-    + **HTTP 헤더 중에 `Cache-Control`를 이용함**
     + 사용자 응답 속도 향상
     + 서버의 부하 완화
 
@@ -246,13 +245,13 @@ Connection: keep-alive
     ```
     
 + 캐시 제어 헤더
-  + Cache-Control
-    + `Cache-Control: max-age`
-    + `Cache-Control: no-cache`
-      + 조건부 요청을 이용해서 항상 유효한 데이터 인지 체크함
-    + `Cache-Control: no-store`
-      + 메모리에서 사용하고 최대한 빨리 삭제(저장하면 안됨)
-    
+  + **Cache-Control**
+    + max-age
+    + no-cache
+      + 조건부 요청을 이용해서 항상 유효한 데이터인지 체크함
+    + no-store
+      + 데이터를 저장하지 말라는 뜻
+
 + 조건부 요청과 검증 헤더
   + 조건부 요청 헤더 : 요청 헤더에서만 사용 가능
   + 검증 헤더 : 응답 헤더에 사용
@@ -261,6 +260,8 @@ Connection: keep-alive
   |------|---|---|
   |시간 기반|If-Modified-Since, If-Unmodified-Since|Last-Modified|
   |내용 기반|If-Match, If-None-Match|ETag|
+
++ 캐시 무효화
 
 #### 출처(참고문헌)
 + GPT
