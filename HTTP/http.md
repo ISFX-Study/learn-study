@@ -257,6 +257,11 @@ Connection: keep-alive
   + 조건부 요청 헤더 : 요청 헤더에서만 사용 가능
   + 검증 헤더 : 응답 헤더에 사용
 
+  |구분|조건부 요청 헤더|검증 헤더|
+  |------|---|---|
+  |시간 기반|If-Modified-Since, If-Unmodified-Since|Last-Modified|
+  |내용 기반|If-Match, If-None-Match|ETag|
+
 #### 출처(참고문헌)
 + GPT
 + 웹의 기초
