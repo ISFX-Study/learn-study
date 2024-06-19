@@ -249,6 +249,7 @@ Connection: keep-alive
     + max-age
     + no-cache
       + 조건부 요청을 이용해서 항상 유효한 데이터인지 체크함
+      + `max-age=0`와 같은 뜻
     + no-store
       + 데이터를 저장하지 말라는 뜻
 
