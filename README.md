@@ -27,7 +27,7 @@ learn-study
 | 4 | 4회차 | 2024-07-07 | HTTP 캐시 | Oracle Database |
 | 5 | 5회차 | 2024-07-28 | DFS와 BFS | Oracle Database |
 | 6 | 6회차 | 2024-08-24 | - | Oracle Database |
-| 7 | 7회차 |  |  |  |
+| 7 | 7회차 | 2024-09-14 | Git브랜치전략 |  |
 | 8 | 8회차 |  |  |  |
 | 9 | 9회차 |  |  |  |
 
