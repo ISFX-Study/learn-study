@@ -32,7 +32,7 @@ learn-study
 | 9 | 9회차 | 2024-10-19 | 자바의 메모리 구조 | Oracle DB Server |
 | 10 | 10회차 | 2024-11-08 | String클래스  | 판다스 |
 | 11 | 11회차 | 2024-11-22 | 래퍼클래스 | 넘파이 |
-| 12 | 12회차 | 2024-12-21 | ENUM |  |
+| 12 | 12회차 | 2024-12-21 | ENUM | Oracle Database |
 
 ## :triangular_flag_on_post:  기타
 + 
