@@ -9,7 +9,7 @@ learn-study
 ## :triangular_flag_on_post:  스터디 개요
 + **주제** : 자유 주제
 + **목표** : 토론 및 지식 공유를 통한 개인의 성장
-+ **기간** : 2025-06-13 ~
++ **기간** : 2025-07-01 ~
 + **참가자** : 박은주, 고현아 
  
 ## :triangular_flag_on_post: 스터디 진행 방향
@@ -33,7 +33,7 @@ learn-study
 | 10 | 10회차 | 2024-11-08 | String클래스  | 판다스 |
 | 11 | 11회차 | 2024-11-22 | 래퍼클래스 | 넘파이 |
 | 12 | 12회차 | 2024-12-21 | ENUM | Oracle Database |
-| 13 | 13회차 | 2025-06-13 | Jasypt | SQLP  |
+| 13 | 13회차 | 2025-07-07 | Jasypt | SQLP  |
 
 ## :triangular_flag_on_post:  기타
 + 
